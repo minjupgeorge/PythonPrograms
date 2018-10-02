@@ -1,0 +1,14 @@
+def position(l,v):
+    i=0
+    pos=-1
+    while i<len(l):
+        if l[i]== v:
+            pos=l.index(v)
+            break
+        i=i+1
+    if pos==-1:
+        print("Not found")
+    else:
+        print("Value %d found at %d" %(v,pos))
+        
+position([2,4,5],2)
