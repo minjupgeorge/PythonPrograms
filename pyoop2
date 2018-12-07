@@ -1,0 +1,11 @@
+class computer:
+    def __init__(self,cpu,ram):#self:getting object by default
+        self.cpu=cpu
+        self.ram=ram
+        
+    def config(self):
+        print("config is",self.cpu,self.ram)#cpu is not a local variable
+com1=computer('i3',16)#object creation
+com2=computer('Ryzen 3',8)
+computer.config(com1)
+computer.config(com2)
