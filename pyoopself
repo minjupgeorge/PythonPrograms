@@ -1,0 +1,18 @@
+#constructor,self
+class Computer:
+    def __init__(self):
+        self.name="priyanka"
+        self.age=40
+    def update(self):
+        self.age=28
+c1=Computer()#constructor
+c2=Computer()
+
+c2.update();
+
+print(c1.name)#self is directing to c1 
+c2.name="Nick"
+print(c2.name,c2.age)
+print(id(c2))
+
+#Every Time you create an object it is allocated to new space
