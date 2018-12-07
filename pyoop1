@@ -1,0 +1,9 @@
+class computer:
+    def __init__(self):
+        print("in int")
+    def config(self):
+        print("i5,16gb,17b")
+com1=computer()//object creation
+com2=computer()
+computer.config(com1)
+computer.config(com2)
